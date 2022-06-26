@@ -9,3 +9,13 @@
 body {
   box-sizing: inherit;
 }
+
+.flow > *:where(:not(:first-child)) {
+  margin-block-start: var(--gap, 16px);
+}
+
+.article {
+  margin-inline: auto;
+  width: min(100%, 500px);
+  padding: 32px;
+}
